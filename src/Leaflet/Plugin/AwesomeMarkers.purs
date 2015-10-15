@@ -9,8 +9,8 @@ module Leaflet.Plugin.AwesomeMarkers where
 import Control.Monad.Eff
 import Leaflet.Types
 
-type IconOptions r = { prefix      :: String,
+type AwesomeIconOptions r = { prefix      :: String,
                        icon        :: String,
                        markerColor :: String | r }
 
-foreign import icon :: forall r e. IconOptions r -> Eff e Icon
+foreign import icon :: forall r e. AwesomeIconOptions r -> Eff e Icon

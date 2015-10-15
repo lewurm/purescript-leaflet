@@ -25,6 +25,11 @@ class Layer a where
   toILayer :: a -> ILayer
   addTo :: forall e. a -> Map -> Eff e a
 
+
+type Point = { x :: Int, y :: Int }
+
+type IconOptions = { iconUrl :: URL, iconSize :: Point }
+
 type MapOptions = { attributionControl :: Boolean,
                     center :: LatLng,
                     layers :: Array ILayer,
