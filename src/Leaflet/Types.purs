@@ -31,7 +31,7 @@ type MapOptions = { attributionControl :: Boolean,
                     maxBounds :: LatLngBounds,
                     zoom :: Number }
 
-type TileLayerOptions r = { subdomains :: Array String | r }
+type TileLayerOptions r = { id :: String, subdomains :: Array String | r }
 
 type MarkerOptions r = { icon :: Icon | r }
 
