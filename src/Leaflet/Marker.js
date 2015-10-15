@@ -12,7 +12,7 @@ exports.addMarkerToMap = function (l) {
     }
 }
 
-exports.maker = function (o) {
+exports.marker = function (o) {
     return function(l) {
         return L.marker(l,o);
     }
