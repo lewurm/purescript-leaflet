@@ -27,11 +27,11 @@ class Layer a where
 
 type MapOptions = { attributionControl :: Boolean,
                     center :: LatLng,
-                    layers :: [ILayer],
+                    layers :: Array ILayer,
                     maxBounds :: LatLngBounds,
                     zoom :: Number }
 
-type TileLayerOptions r = { subdomains :: [String] | r }
+type TileLayerOptions r = { subdomains :: Array String | r }
 
 type MarkerOptions r = { icon :: Icon | r }
 
